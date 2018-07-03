@@ -1,0 +1,29 @@
+.nav-extended{
+    background-color: white;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    background-color: rgb(68, 67, 64);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    color:rgb(143, 136, 136);
+    text-align: center;
+}
+
+hr{
+    width:30%;
+    border-color:rgb(122, 116, 116);
+}
+
+.row{
+    padding-top: 5%;
+}
