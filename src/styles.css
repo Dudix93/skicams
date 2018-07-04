@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    min-width: 320px;
+}
+
+div:has(div[id*="div-gpt-ad-1412619226977-0"]){
+    display:none !important;
+}
+
+.nav-extended{
+    background-color: white;
+}
+
+.row{
+    padding-top: 5%;
+}
+
+.container{
+    width:60%;
+}
+
+.content{
+    width:60%;
+    margin-left:20%; 
+}
+
+/* @media screen and (max-width: 900px){
+    .content{
+        padding-bottom:30%;
+        background-color: red;
+    }
+  } */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+hr{
+    width:200px;
+    border-color:rgb(122, 116, 116);
+}
