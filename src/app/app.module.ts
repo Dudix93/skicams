@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { RestapiServiceProvider } from '../providers/restapi-service/restapi-service';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -24,9 +26,12 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     MaterializeModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    RestapiServiceProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,6 +2,10 @@ body{
     min-width: 320px;
 }
 
+div:has(div[id*="div-gpt-ad-1412619226977-0"]){
+    display:none !important;
+}
+
 .nav-extended{
     background-color: white;
 }

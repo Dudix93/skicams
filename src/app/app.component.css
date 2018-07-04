@@ -1,0 +1,7 @@
+.tabs .tab a{
+    color:black;
+}
+
+.tabs .tab a.active {
+    color:orange;
+}
