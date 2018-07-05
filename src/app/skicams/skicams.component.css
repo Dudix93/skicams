@@ -18,3 +18,14 @@ img{
 .name{
     font-size: 150%;
 }
+
+body{
+    min-width: 320px;
+    margin: 0 0 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}

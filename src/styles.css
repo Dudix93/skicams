@@ -1,7 +1,17 @@
 body{
     min-width: 320px;
-    padding-bottom: 10%;
+    margin: 0 0 100px;
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+hr{
+    width:200px;
+    border-color:rgb(122, 116, 116);
 }
 
 .nav-extended{
@@ -27,13 +37,3 @@ body{
         background-color: red;
     }
   } */
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-hr{
-    width:200px;
-    border-color:rgb(122, 116, 116);
-}
