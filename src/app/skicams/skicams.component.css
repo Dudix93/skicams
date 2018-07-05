@@ -16,7 +16,13 @@ img{
 }
 
 .name{
-    font-size: 150%;
+    font-size: 180%;
+    font-weight: 500;
+    color: rgb(99, 101, 102);
+}
+
+.card-content{
+    margin:-5%;
 }
 
 body{

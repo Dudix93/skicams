@@ -1,9 +1,11 @@
 .tabs .tab a{
-    color:black;
+    color:rgb(53, 49, 49);
+    font-weight: bold;
 }
 
 .tabs .tab a.active {
-    color:orange;
+    color:rgb(255, 123, 0);
+    font-weight: bold;
 }
 
 footer {
@@ -16,4 +18,8 @@ footer {
     overflow: hidden;
     color:rgb(143, 136, 136);
     text-align: center;
+}
+
+.nav-extended{
+    padding-top:2%;
 }

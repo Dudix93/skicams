@@ -1,19 +1,25 @@
-@media screen and (min-width: 700px){
+@media screen and (min-width: 900px){
     .card{
-        width:40%;
-        margin-left:30%;
-        height: 30%;
+        width:30%;
+        margin-left:35%;
+        margin-top:5%;
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     body{
-        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
     }
 }
 
-span{
+.error{
     color: red;
+    font-size: 12px;
+}
+
+.sent{
+    color: green;
     font-size: 12px;
 }
 
@@ -26,4 +32,12 @@ body{
 html {
     position: relative;
     min-height: 100%;
+}
+
+.row{
+    margin:-5%;
+}
+
+form{
+    padding-bottom: 10%;
 }
