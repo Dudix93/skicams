@@ -1,9 +1,7 @@
 body{
     min-width: 320px;
-}
-
-div:has(div[id*="div-gpt-ad-1412619226977-0"]){
-    display:none !important;
+    padding-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-extended{

@@ -1,3 +1,33 @@
-<p>
-  contact works!
-</p>
+<html>
+  <body>
+      <div class="card">
+          <div class="card-content">
+              <form class="col s12 m6">
+                  <div class="row">
+                      <div class="input-field col s12 m6 offset-m3">
+                        <input placeholder="Name" name="name" type="text" [(ngModel)]="name" required>
+                        <span *ngIf="name_error != ''">{{name_error}}</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6 offset-m3">
+                          <input placeholder="E-mail" name="email" type="text" [(ngModel)]="email" required>
+                          <span *ngIf="email_error != ''">{{email_error}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                          <div class="input-field col s12 m6 offset-m3">
+                            <textarea placeholder="Message" name="message" class="materialize-textarea"></textarea>
+                            <span *ngIf="message_error != ''">{{message_error}}</span>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3 right-align">
+                            <button class="waves-effect blue darken-1 btn" (click)="validateForm()">Send</button>
+                        </div>
+                    </div>
+              </form>
+          </div>
+      </div>
+  </body>
+</html>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RestapiServiceProvider } from '../providers/restapi-service/restapi-service';
 
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     BrowserModule,
     MaterializeModule,
     RouterModule.forRoot(appRoutes),
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [
     RestapiServiceProvider
