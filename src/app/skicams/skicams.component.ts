@@ -14,7 +14,7 @@ export class SkicamsComponent implements OnInit {
   loaded: Boolean = false;
   day: String = new Date().getUTCDate() < 10 ? '0' + new Date().getUTCDate().toString() : new Date().getUTCDate().toString();
   month: String = new Date().getMonth() + 1 < 10 ? '0' + (new Date().getMonth() + 1).toString() : (new Date().getMonth() + 1).toString();
-  date: string = this.day + '-' + this.month + '-' + new Date().getFullYear().toString();
+  date: string = new Date().getUTCDate() + '-' + this.month + '-' + new Date().getFullYear().toString();
 
   constructor(
     public api: RestapiServiceProvider
