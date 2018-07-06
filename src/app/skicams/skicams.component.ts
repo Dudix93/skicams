@@ -12,9 +12,8 @@ export class SkicamsComponent implements OnInit {
   places: Array<any> = [];
   cams: Array<any> = [];
   loaded: boolean = false;
-  day: String = new Date().getUTCDate() + 1 < 10 ? '0' + (new Date().getUTCDate() + 1).toString() : (new Date().getUTCDate() + 1).toString();
   month: String = new Date().getMonth() + 1 < 10 ? '0' + (new Date().getMonth() + 1).toString() : (new Date().getMonth() + 1).toString();
-  date: string = this.day + '-' + this.month + '-' + new Date().getFullYear().toString();
+  date: string = new Date().getUTCDate() + '-' + this.month + '-' + new Date().getFullYear().toString();
 
   constructor(
     public api: RestapiServiceProvider
