@@ -11,8 +11,8 @@ export class SkicamsComponent implements OnInit {
 
   places: Array<any> = [];
   cams: Array<any> = [];
-  loaded: boolean = false;
-  day: String = new Date().getUTCDate() + 1 < 10 ? '0' + (new Date().getUTCDate() + 1).toString() : (new Date().getUTCDate() + 1).toString();
+  loaded: Boolean = false;
+  day: String = new Date().getUTCDate() < 10 ? '0' + new Date().getUTCDate().toString() : new Date().getUTCDate().toString();
   month: String = new Date().getMonth() + 1 < 10 ? '0' + (new Date().getMonth() + 1).toString() : (new Date().getMonth() + 1).toString();
   date: string = this.day + '-' + this.month + '-' + new Date().getFullYear().toString();
 
@@ -24,9 +24,6 @@ export class SkicamsComponent implements OnInit {
   ngOnInit() {
     this.getCameras('Vigo di Fassa', 'Baby park', 'Seggiovia Pramartin');
     this.getCameras('Alpe Lusia', 'Le Cune', 'Pista Intermedia');
-    // setTimeout(()=>{
-    //   this.loaded = true;
-    // },2000);
   }
 
   getCameras(place_name: string, cam1_name: string, cam2_name: string) {
